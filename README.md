@@ -1,19 +1,24 @@
-# Stitch Public Demo
+# Stitch Demo
 
-Static GitHub Pages demo for Stitch, a developer API for rendering natural multi-speaker conversations from structured dialogue.
+Stitch is a developer API for rendering natural multi-speaker conversations from structured dialogue.
 
-This repo contains only the public demo page and exported proof clips. The private Stitch engine, Studio tooling, API server, environment files, and source goldens stay in the main Stitch repository.
+This demo shows how Stitch handles the parts that make generated dialogue feel like a real conversation:
 
-## Local Preview
+- distinct speakers
+- natural handoffs
+- interruptions and floor control
+- backchannels
+- timed transcripts
+- targeted refinement
 
-Open `index.html` directly, or serve the folder with any static file server.
+## Listen
 
-## Updating
+Open the live demo:
 
-From the private Stitch repo:
+[https://hiimdonald.github.io/stitch-public-demo/](https://hiimdonald.github.io/stitch-public-demo/)
 
-```sh
-npm run demo:build-pages
-```
+The page includes proof clips, follow-along transcripts, API-shaped request/response examples, and a lightweight Studio-style refinement preview.
 
-Then copy the generated `artifacts/github-pages-demo/` contents into this repository and push `main`.
+## What Stitch Does
+
+TTS providers make voices. Stitch makes conversations.
