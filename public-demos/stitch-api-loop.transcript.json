@@ -1,0 +1,179 @@
+{
+  "id": "stitch-api-loop",
+  "title": "Stitch API refinement loop",
+  "fixture": "stitch-api-serious-demo",
+  "start_seconds": 0,
+  "duration_seconds": 142.086,
+  "entries": [
+    {
+      "index": 0,
+      "speaker_id": "host",
+      "speaker_name": "Nina",
+      "text": "Give me the short version, what does Stitch do that a normal text to speech API doesn't?",
+      "start_seconds": 0.18,
+      "end_seconds": 4.908
+    },
+    {
+      "index": 1,
+      "speaker_id": "builder",
+      "speaker_name": "Marcus",
+      "text": "A TTS API gives you a voice saying a line. Stitch renders the conversation around the line, who has the floor, when someone cuts in, how long the handoff breathes, and where the transcript should land.",
+      "start_seconds": 5.074,
+      "end_seconds": 18.463,
+      "is_interrupted": true
+    },
+    {
+      "index": 2,
+      "speaker_id": "host",
+      "speaker_name": "Nina",
+      "text": "Can I stop you there for a second?",
+      "start_seconds": 18.203,
+      "end_seconds": 19.666,
+      "overlaps_with": 1
+    },
+    {
+      "index": 3,
+      "speaker_id": "builder",
+      "speaker_name": "Marcus",
+      "text": "Yeah, go ahead.",
+      "start_seconds": 19.766,
+      "end_seconds": 20.576
+    },
+    {
+      "index": 4,
+      "speaker_id": "host",
+      "speaker_name": "Nina",
+      "text": "That feels like the wedge, providers make voices, Stitch makes conversations.",
+      "start_seconds": 20.742,
+      "end_seconds": 26.071
+    },
+    {
+      "index": 5,
+      "speaker_id": "builder",
+      "speaker_name": "Marcus",
+      "text": "Exactly. If your app needs a coaching call, a sales roleplay, a tutoring session, or a customer interview, the hard part isn't only the voice, it's the timing between people.",
+      "start_seconds": 26.237,
+      "end_seconds": 38.985
+    },
+    {
+      "index": 6,
+      "speaker_id": "host",
+      "speaker_name": "Nina",
+      "text": "So the input is still structured dialogue?",
+      "start_seconds": 39.151,
+      "end_seconds": 41.45
+    },
+    {
+      "index": 7,
+      "speaker_id": "builder",
+      "speaker_name": "Marcus",
+      "text": "Right, developers send speakers, turns, cues, and provider choices. Stitch returns mixed audio, transcript timing, a cost estimate, and the render metadata they need to ship it inside their product.",
+      "start_seconds": 41.616,
+      "end_seconds": 56.375
+    },
+    {
+      "index": 8,
+      "speaker_id": "host",
+      "speaker_name": "Nina",
+      "text": "But if the first render feels a little off, are they back to regenerating the whole thing?",
+      "start_seconds": 56.541,
+      "end_seconds": 61.243
+    },
+    {
+      "index": 9,
+      "speaker_id": "builder",
+      "speaker_name": "Marcus",
+      "text": "Not if they use Studio. Studio is the review bench. You load the render, listen against the transcript, tag the exact moment that feels slow, awkward, too quiet, or poorly delivered, then decide whether the fix is free mix work or paid targeted TTS.",
+      "start_seconds": 61.409,
+      "end_seconds": 79.91,
+      "is_interrupted": true
+    },
+    {
+      "index": 10,
+      "speaker_id": "host",
+      "speaker_name": "Nina",
+      "text": "So not edit the whole file every time something small feels off.",
+      "start_seconds": 79.49,
+      "end_seconds": 82.628,
+      "is_interrupted": true,
+      "overlaps_with": 9
+    },
+    {
+      "index": 11,
+      "speaker_id": "builder",
+      "speaker_name": "Marcus",
+      "text": "Right, let me finish that part.",
+      "start_seconds": 82.448,
+      "end_seconds": 84.538,
+      "overlaps_with": 10
+    },
+    {
+      "index": 12,
+      "speaker_id": "builder",
+      "speaker_name": "Marcus",
+      "text": "If one turn has a weird pause, Studio can regenerate only that stem and stitch it back into the existing mix. If the handoff is too slow, it can adjust the timing without calling the voice provider again. That matters when teams are testing a lot of variants.",
+      "start_seconds": 84.698,
+      "end_seconds": 101.547
+    },
+    {
+      "index": 13,
+      "speaker_id": "host",
+      "speaker_name": "Nina",
+      "text": "That's useful, especially if the developer is paying for every character.",
+      "start_seconds": 101.713,
+      "end_seconds": 105.866
+    },
+    {
+      "index": 14,
+      "speaker_id": "builder",
+      "speaker_name": "Marcus",
+      "text": "Exactly, and it keeps the quality loop honest, while the API gives you scale and Studio helps you find the recipe worth scaling.",
+      "start_seconds": 106.032,
+      "end_seconds": 114.574
+    },
+    {
+      "index": 15,
+      "speaker_id": "host",
+      "speaker_name": "Nina",
+      "text": "Where does this start commercially?",
+      "start_seconds": 114.74,
+      "end_seconds": 116.412
+    },
+    {
+      "index": 16,
+      "speaker_id": "builder",
+      "speaker_name": "Marcus",
+      "text": "Developers building products where conversation is the interface, training apps, simulation tools, support QA, language learning, customer research, anything where the audio needs to sound reviewed, not pasted together.",
+      "start_seconds": 116.578,
+      "end_seconds": 130.586,
+      "is_interrupted": true
+    },
+    {
+      "index": 17,
+      "speaker_id": "host",
+      "speaker_name": "Nina",
+      "text": "Not podcasts first, that distinction matters.",
+      "start_seconds": 130.166,
+      "end_seconds": 132.729,
+      "is_interrupted": true,
+      "overlaps_with": 16
+    },
+    {
+      "index": 18,
+      "speaker_id": "builder",
+      "speaker_name": "Marcus",
+      "text": "Right, not podcasts first.",
+      "start_seconds": 132.549,
+      "end_seconds": 134.508,
+      "overlaps_with": 17
+    },
+    {
+      "index": 19,
+      "speaker_id": "builder",
+      "speaker_name": "Marcus",
+      "text": "Podcasts are a possible output, but the business is developer infrastructure for conversation rendering.",
+      "start_seconds": 134.668,
+      "end_seconds": 141.826
+    }
+  ]
+}

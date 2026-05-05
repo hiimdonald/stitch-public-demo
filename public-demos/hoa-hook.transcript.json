@@ -1,0 +1,304 @@
+{
+  "id": "hoa-hook",
+  "title": "HOA ornaments demo",
+  "fixture": "hoa-ornaments-funny-demo",
+  "start_seconds": 0,
+  "duration_seconds": 103.635,
+  "entries": [
+    {
+      "index": 0,
+      "speaker_id": "laura",
+      "speaker_name": "Laura",
+      "text": "Alright, next up is the neighborhood HOA ornament complaint. I'm Laura, chairing tonight, Will filed it, and Maya owns several of the flamingos in question.",
+      "start_seconds": 0.18,
+      "end_seconds": 10.368
+    },
+    {
+      "index": 1,
+      "speaker_id": "will",
+      "speaker_name": "Will",
+      "text": "My complaint is simple, the front yards are becoming a themed miniature golf course.",
+      "start_seconds": 10.526,
+      "end_seconds": 16.116
+    },
+    {
+      "index": 2,
+      "speaker_id": "maya",
+      "speaker_name": "Maya",
+      "text": "That is extremely generous, thank you.",
+      "start_seconds": 16.274,
+      "end_seconds": 18.625
+    },
+    {
+      "index": 3,
+      "speaker_id": "will",
+      "speaker_name": "Will",
+      "text": "I prepared a brief, with exhibits.",
+      "start_seconds": 18.783,
+      "end_seconds": 21.082
+    },
+    {
+      "index": 4,
+      "speaker_id": "maya",
+      "speaker_name": "Maya",
+      "text": "He brought exhibits, for gnomes.",
+      "start_seconds": 21.24,
+      "end_seconds": 23.669
+    },
+    {
+      "index": 5,
+      "speaker_id": "will",
+      "speaker_name": "Will",
+      "text": "Forty-two pages, mostly photos.",
+      "start_seconds": 23.827,
+      "end_seconds": 26.178
+    },
+    {
+      "index": 6,
+      "speaker_id": "laura",
+      "speaker_name": "Laura",
+      "text": "We're not reading forty-two pages.",
+      "start_seconds": 26.336,
+      "end_seconds": 28.374
+    },
+    {
+      "index": 7,
+      "speaker_id": "will",
+      "speaker_name": "Will",
+      "text": "On Maple Court alone, I counted nineteen flamingos.",
+      "start_seconds": 28.532,
+      "end_seconds": 31.876
+    },
+    {
+      "index": 8,
+      "speaker_id": "maya",
+      "speaker_name": "Maya",
+      "text": "Nine of those are mine, and they have names.",
+      "start_seconds": 32.034,
+      "end_seconds": 35.352
+    },
+    {
+      "index": 9,
+      "speaker_id": "will",
+      "speaker_name": "Will",
+      "text": "That's the problem, Maya, they have names.",
+      "start_seconds": 35.51,
+      "end_seconds": 38.096
+    },
+    {
+      "index": 10,
+      "speaker_id": "maya",
+      "speaker_name": "Maya",
+      "text": "Phyllis is a delight.",
+      "start_seconds": 38.254,
+      "end_seconds": 40.292
+    },
+    {
+      "index": 11,
+      "speaker_id": "will",
+      "speaker_name": "Will",
+      "text": "Phyllis is a code violation.",
+      "start_seconds": 40.45,
+      "end_seconds": 41.405,
+      "is_interrupted": true
+    },
+    {
+      "index": 12,
+      "speaker_id": "laura",
+      "speaker_name": "Laura",
+      "text": "Sorry, can I just-",
+      "start_seconds": 41.145,
+      "end_seconds": 42.242,
+      "overlaps_with": 11
+    },
+    {
+      "index": 13,
+      "speaker_id": "will",
+      "speaker_name": "Will",
+      "text": "Sure, go ahead.",
+      "start_seconds": 42.342,
+      "end_seconds": 43.57
+    },
+    {
+      "index": 14,
+      "speaker_id": "laura",
+      "speaker_name": "Laura",
+      "text": "The bylaws say tasteful, that's the whole sentence.",
+      "start_seconds": 43.728,
+      "end_seconds": 46.915
+    },
+    {
+      "index": 15,
+      "speaker_id": "maya",
+      "speaker_name": "Maya",
+      "text": "Right.",
+      "start_seconds": 47.073,
+      "end_seconds": 47.648
+    },
+    {
+      "index": 16,
+      "speaker_id": "will",
+      "speaker_name": "Will",
+      "text": "And tasteful clearly excludes a plastic bird in a top hat.",
+      "start_seconds": 47.806,
+      "end_seconds": 51.881
+    },
+    {
+      "index": 17,
+      "speaker_id": "maya",
+      "speaker_name": "Maya",
+      "text": "Phyllis wears a sunhat, it's seasonal.",
+      "start_seconds": 52.039,
+      "end_seconds": 54.338
+    },
+    {
+      "index": 18,
+      "speaker_id": "will",
+      "speaker_name": "Will",
+      "text": "She wore a Santa hat in July.",
+      "start_seconds": 54.496,
+      "end_seconds": 56.612
+    },
+    {
+      "index": 19,
+      "speaker_id": "maya",
+      "speaker_name": "Maya",
+      "text": "Christmas in July is a thing, Will.",
+      "start_seconds": 56.77,
+      "end_seconds": 58.886
+    },
+    {
+      "index": 20,
+      "speaker_id": "will",
+      "speaker_name": "Will",
+      "text": "It is not a thing recognized by the bylaws, and frankly, this sets a dangerous-",
+      "start_seconds": 59.044,
+      "end_seconds": 62.942,
+      "is_interrupted": true
+    },
+    {
+      "index": 21,
+      "speaker_id": "laura",
+      "speaker_name": "Laura",
+      "text": "Will, it's a flamingo in a hat.",
+      "start_seconds": 62.522,
+      "end_seconds": 64.377,
+      "overlaps_with": 20
+    },
+    {
+      "index": 22,
+      "speaker_id": "will",
+      "speaker_name": "Will",
+      "text": "To clarify, I just mean once we allow one hat, we've opened the door to costumes.",
+      "start_seconds": 64.417,
+      "end_seconds": 69.929
+    },
+    {
+      "index": 23,
+      "speaker_id": "laura",
+      "speaker_name": "Laura",
+      "text": "Still no.",
+      "start_seconds": 70.087,
+      "end_seconds": 70.897
+    },
+    {
+      "index": 24,
+      "speaker_id": "maya",
+      "speaker_name": "Maya",
+      "text": "Can I say something, because actually-",
+      "start_seconds": 71.055,
+      "end_seconds": 73.275
+    },
+    {
+      "index": 25,
+      "speaker_id": "will",
+      "speaker_name": "Will",
+      "text": "If I could just-",
+      "start_seconds": 71.575,
+      "end_seconds": 72.777,
+      "overlaps_with": 24
+    },
+    {
+      "index": 26,
+      "speaker_id": "laura",
+      "speaker_name": "Laura",
+      "text": "Maya has the floor, Will.",
+      "start_seconds": 72.857,
+      "end_seconds": 74.268
+    },
+    {
+      "index": 27,
+      "speaker_id": "maya",
+      "speaker_name": "Maya",
+      "text": "Thank you, last summer, three kids knocked on my door just to meet Phyllis.",
+      "start_seconds": 74.426,
+      "end_seconds": 81.087
+    },
+    {
+      "index": 28,
+      "speaker_id": "will",
+      "speaker_name": "Will",
+      "text": "Maya, that's technically trespassing.",
+      "start_seconds": 81.245,
+      "end_seconds": 82.92,
+      "is_interrupted": true
+    },
+    {
+      "index": 29,
+      "speaker_id": "maya",
+      "speaker_name": "Maya",
+      "text": "That's community.",
+      "start_seconds": 82.74,
+      "end_seconds": 83.863,
+      "overlaps_with": 28
+    },
+    {
+      "index": 30,
+      "speaker_id": "will",
+      "speaker_name": "Will",
+      "text": "And we still haven't addressed the pirate ship.",
+      "start_seconds": 84.023,
+      "end_seconds": 86.27
+    },
+    {
+      "index": 31,
+      "speaker_id": "laura",
+      "speaker_name": "Laura",
+      "text": "The pirate ship is tabled until I have emotional support.",
+      "start_seconds": 86.428,
+      "end_seconds": 89.38
+    },
+    {
+      "index": 32,
+      "speaker_id": "laura",
+      "speaker_name": "Laura",
+      "text": "Can we vote please, before I age another year.",
+      "start_seconds": 89.501,
+      "end_seconds": 92.27
+    },
+    {
+      "index": 33,
+      "speaker_id": "will",
+      "speaker_name": "Will",
+      "text": "I move to ban all decorative wildlife and humanoid figures under three feet.",
+      "start_seconds": 92.428,
+      "end_seconds": 97.313
+    },
+    {
+      "index": 34,
+      "speaker_id": "maya",
+      "speaker_name": "Maya",
+      "text": "I move to make Phyllis the official mascot.",
+      "start_seconds": 97.471,
+      "end_seconds": 100.135
+    },
+    {
+      "index": 35,
+      "speaker_id": "laura",
+      "speaker_name": "Laura",
+      "text": "I move that we adjourn and I go scream into a pillow.",
+      "start_seconds": 100.293,
+      "end_seconds": 103.375
+    }
+  ]
+}

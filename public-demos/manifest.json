@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-05-05T23:47:35.556Z",
+  "output_dir": "public-demos",
+  "clips": [
+    {
+      "id": "hoa-hook",
+      "title": "HOA ornaments demo",
+      "fixture": "hoa-ornaments-funny-demo",
+      "purpose": "A fast HOA exchange with three distinct speakers, natural cutoffs, and clear floor control.",
+      "callouts": [
+        "3 distinct speakers",
+        "polite interruption",
+        "speaker gives the floor",
+        "natural handoffs"
+      ],
+      "source_audio": "goldens/hoa-ornaments-funny-demo/latest/output.mp3",
+      "output_audio": "public-demos/hoa-hook.mp3",
+      "transcript_json": "public-demos/hoa-hook.transcript.json",
+      "input_snippet_json": "public-demos/hoa-hook.input-snippet.json",
+      "start_seconds": 0,
+      "duration_seconds": 103.635,
+      "source_duration_seconds": 103.635
+    },
+    {
+      "id": "stitch-api-loop",
+      "title": "Stitch API refinement loop",
+      "fixture": "stitch-api-serious-demo",
+      "purpose": "A practical developer conversation showing structured input, review, and targeted refinement.",
+      "callouts": [
+        "developer API",
+        "Studio refinement",
+        "targeted TTS",
+        "cost-aware iteration"
+      ],
+      "source_audio": "goldens/stitch-api-serious-demo/latest/output.mp3",
+      "output_audio": "public-demos/stitch-api-loop.mp3",
+      "transcript_json": "public-demos/stitch-api-loop.transcript.json",
+      "input_snippet_json": "public-demos/stitch-api-loop.input-snippet.json",
+      "start_seconds": 0,
+      "duration_seconds": 142.086,
+      "source_duration_seconds": 142.086
+    }
+  ]
+}

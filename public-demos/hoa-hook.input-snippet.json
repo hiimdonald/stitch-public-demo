@@ -1,0 +1,240 @@
+{
+  "speakers": [
+    {
+      "id": "laura",
+      "name": "Laura",
+      "voice": {
+        "provider": "elevenlabs",
+        "voice_id": "hpp4J3VqNfWAUOO0d1Us",
+        "settings": {
+          "speed": 1,
+          "stability": 0.45,
+          "similarity_boost": 0.75,
+          "style": 0.35,
+          "elevenlabs_model": "eleven_v3"
+        }
+      }
+    },
+    {
+      "id": "will",
+      "name": "Will",
+      "voice": {
+        "provider": "elevenlabs",
+        "voice_id": "nPczCjzI2devNBz1zQrb",
+        "settings": {
+          "speed": 1,
+          "stability": 0.45,
+          "similarity_boost": 0.75,
+          "style": 0.35,
+          "elevenlabs_model": "eleven_v3"
+        }
+      }
+    },
+    {
+      "id": "maya",
+      "name": "Maya",
+      "voice": {
+        "provider": "elevenlabs",
+        "voice_id": "cgSgspJ2msm6clMCkdW9",
+        "settings": {
+          "speed": 1,
+          "stability": 0.45,
+          "similarity_boost": 0.75,
+          "style": 0.35,
+          "elevenlabs_model": "eleven_v3"
+        }
+      }
+    }
+  ],
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "laura",
+      "text": "Alright, next up is the neighborhood HOA ornament complaint. I'm Laura, chairing tonight, Will filed it, and Maya owns several of the flamingos in question."
+    },
+    {
+      "index": 1,
+      "speaker": "will",
+      "text": "My complaint is simple, the front yards are becoming a themed miniature golf course."
+    },
+    {
+      "index": 2,
+      "speaker": "maya",
+      "text": "That is extremely generous, thank you."
+    },
+    {
+      "index": 3,
+      "speaker": "will",
+      "text": "I prepared a brief, with exhibits."
+    },
+    {
+      "index": 4,
+      "speaker": "maya",
+      "text": "He brought exhibits, for gnomes."
+    },
+    {
+      "index": 5,
+      "speaker": "will",
+      "text": "Forty-two pages, mostly photos."
+    },
+    {
+      "index": 6,
+      "speaker": "laura",
+      "text": "We're not reading forty-two pages."
+    },
+    {
+      "index": 7,
+      "speaker": "will",
+      "text": "On Maple Court alone, I counted nineteen flamingos."
+    },
+    {
+      "index": 8,
+      "speaker": "maya",
+      "text": "Nine of those are mine, and they have names."
+    },
+    {
+      "index": 9,
+      "speaker": "will",
+      "text": "That's the problem, Maya, they have names."
+    },
+    {
+      "index": 10,
+      "speaker": "maya",
+      "text": "Phyllis is a delight."
+    },
+    {
+      "index": 11,
+      "speaker": "will",
+      "text": "Phyllis is a code violation."
+    },
+    {
+      "index": 12,
+      "speaker": "laura",
+      "text": "Sorry, can I just-",
+      "pause_after": 0.1,
+      "interrupt": true,
+      "interrupt_mode": "soft_bid"
+    },
+    {
+      "index": 13,
+      "speaker": "will",
+      "text": "Sure, go ahead."
+    },
+    {
+      "index": 14,
+      "speaker": "laura",
+      "text": "The bylaws say tasteful, that's the whole sentence."
+    },
+    {
+      "index": 15,
+      "speaker": "maya",
+      "text": "Right."
+    },
+    {
+      "index": 16,
+      "speaker": "will",
+      "text": "And tasteful clearly excludes a plastic bird in a top hat."
+    },
+    {
+      "index": 17,
+      "speaker": "maya",
+      "text": "Phyllis wears a sunhat, it's seasonal."
+    },
+    {
+      "index": 18,
+      "speaker": "will",
+      "text": "She wore a Santa hat in July."
+    },
+    {
+      "index": 19,
+      "speaker": "maya",
+      "text": "Christmas in July is a thing, Will."
+    },
+    {
+      "index": 20,
+      "speaker": "will",
+      "text": "It is not a thing recognized by the bylaws, and frankly, this sets a dangerous-"
+    },
+    {
+      "index": 21,
+      "speaker": "laura",
+      "text": "Will, it's a flamingo in a hat.",
+      "interrupt": true,
+      "interrupt_mode": "hard_cut"
+    },
+    {
+      "index": 22,
+      "speaker": "will",
+      "text": "To clarify, I just mean once we allow one hat, we've opened the door to costumes."
+    },
+    {
+      "index": 23,
+      "speaker": "laura",
+      "text": "Still no."
+    },
+    {
+      "index": 24,
+      "speaker": "maya",
+      "text": "Can I say something, because actually-"
+    },
+    {
+      "index": 25,
+      "speaker": "will",
+      "text": "If I could just-",
+      "interrupt": true,
+      "interrupt_mode": "failed_bid"
+    },
+    {
+      "index": 26,
+      "speaker": "laura",
+      "text": "Maya has the floor, Will."
+    },
+    {
+      "index": 27,
+      "speaker": "maya",
+      "text": "Thank you, last summer, three kids knocked on my door just to meet Phyllis."
+    },
+    {
+      "index": 28,
+      "speaker": "will",
+      "text": "Maya, that's technically trespassing."
+    },
+    {
+      "index": 29,
+      "speaker": "maya",
+      "text": "That's community.",
+      "interrupt": true,
+      "interrupt_mode": "reclaim"
+    },
+    {
+      "index": 30,
+      "speaker": "will",
+      "text": "And we still haven't addressed the pirate ship."
+    },
+    {
+      "index": 31,
+      "speaker": "laura",
+      "text": "The pirate ship is tabled until I have emotional support."
+    },
+    {
+      "index": 32,
+      "speaker": "laura",
+      "text": "Can we vote please, before I age another year."
+    },
+    {
+      "index": 33,
+      "speaker": "will",
+      "text": "I move to ban all decorative wildlife and humanoid figures under three feet."
+    },
+    {
+      "index": 34,
+      "speaker": "maya",
+      "text": "I move to make Phyllis the official mascot."
+    },
+    {
+      "index": 35,
+      "speaker": "laura",
+      "text": "I move that we adjourn and I go scream into a pillow."
+    }
+  ]
+}

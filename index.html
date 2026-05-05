@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stitch Demo</title>
+    <meta
+      name="description"
+      content="Listen to Stitch render natural multi-speaker conversations from structured dialogue."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Stitch home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>Stitch</span>
+      </a>
+      <nav class="nav-links" aria-label="Page sections">
+        <a href="#listen">Listen</a>
+        <a href="#api">API</a>
+        <a href="#studio">Studio</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Developer API for natural conversations</p>
+          <h1 id="hero-title">TTS providers make voices. Stitch makes conversations.</h1>
+          <p class="hero-lede">
+            Render structured dialogue into multi-speaker audio with pacing,
+            interruptions, backchannels, transcripts, and targeted refinement.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#listen">Hear the proof</a>
+            <a class="button secondary" href="#api">See the JSON</a>
+          </div>
+          <div class="hero-proof-strip" aria-label="Stitch proof points">
+            <div>
+              <span>Conversation controls</span>
+              <strong>pacing · overlap · transcripts</strong>
+            </div>
+            <div>
+              <span>Studio saves credits</span>
+              <strong>fix one turn, not the whole render</strong>
+            </div>
+            <div>
+              <span>API-first output</span>
+              <strong>audio, timing, and review metadata</strong>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="proof-grid" id="listen" aria-labelledby="listen-title">
+        <div class="proof-copy">
+          <p class="eyebrow">Listen first</p>
+          <h2 id="listen-title">The conversation is the product.</h2>
+          <p>
+            Hear the difference before reading code: distinct voices, clean
+            floor ownership, believable overlap, and timing that feels like one
+            conversation instead of pasted-together clips.
+          </p>
+        </div>
+        <div class="proof-player-panel" aria-label="Audio demo with transcript">
+          <div class="player-label">Current proof clip</div>
+          <div class="clip-tabs" id="clip-tabs" role="tablist" aria-label="Demo clips"></div>
+          <div class="clip-summary">
+            <p class="clip-purpose" id="clip-purpose">Loading demo...</p>
+            <div class="clip-duration" id="clip-duration">--</div>
+          </div>
+          <audio id="demo-audio" controls preload="metadata"></audio>
+          <div class="callouts" id="clip-callouts" aria-label="Clip highlights"></div>
+          <div class="callout-detail" id="callout-detail" aria-live="polite"></div>
+          <div class="panel-header">
+            <span>Follow-along transcript</span>
+            <span id="transcript-count">0 turns</span>
+          </div>
+          <div class="transcript-list" id="transcript-list"></div>
+        </div>
+      </section>
+
+      <section class="api-section" id="api" aria-labelledby="api-title">
+        <div class="section-heading">
+          <p class="eyebrow">Structured input</p>
+          <h2 id="api-title">Not prompt soup. Actual conversation controls.</h2>
+          <p>
+            Send speakers, turns, voices, and floor-control cues as data. Stitch
+            returns mixed audio, transcript timing, and the metadata needed to
+            review or refine the render later.
+          </p>
+        </div>
+        <div class="api-preview">
+          <div class="endpoint-stack" aria-label="API flow">
+            <article class="endpoint-card">
+              <span>POST</span>
+              <code>/v1/render</code>
+              <p>Render structured dialogue into a conversation.</p>
+            </article>
+            <article class="endpoint-card">
+              <span>GET</span>
+              <code>/v1/jobs/{job_id}</code>
+              <p>Poll status, audio, transcripts, and track timings.</p>
+            </article>
+            <article class="endpoint-card">
+              <span>POST</span>
+              <code>/v1/render/{job_id}/refine</code>
+              <p>Regenerate only the affected turn when possible.</p>
+            </article>
+          </div>
+          <div class="api-code-grid">
+            <div class="code-shell">
+              <div class="panel-header">
+                <span>Request</span>
+                <span id="snippet-meta">speakers + turns</span>
+              </div>
+              <pre><code id="json-snippet">{}</code></pre>
+            </div>
+            <div class="code-shell response-shell">
+              <div class="panel-header">
+                <span>Response</span>
+                <span>audio + timing</span>
+              </div>
+              <pre><code id="response-snippet">{}</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="studio-section" id="studio" aria-labelledby="studio-title">
+        <div class="section-heading">
+          <p class="eyebrow">Refinement loop</p>
+          <h2 id="studio-title">Fix the exact issue without rerendering everything.</h2>
+          <p>
+            Studio turns listening notes into targeted fixes, so teams can test
+            small changes, compare versions, and promote the render that works.
+          </p>
+        </div>
+        <div class="studio-mock" aria-label="Interactive Studio refinement preview">
+          <div class="studio-review-surface">
+            <div class="panel-header">
+              <span>Studio waveform</span>
+              <span>selected render · B</span>
+            </div>
+            <div class="mock-waveform" aria-hidden="true">
+              <div class="studio-timeline" id="studio-timeline"></div>
+              <div class="studio-ruler" id="studio-ruler"></div>
+              <div class="studio-controls">
+                <span>Play</span>
+                <span>2s</span>
+                <span>Tag here</span>
+                <span><span id="studio-current-time">0:00</span> / <span id="studio-duration-time">0:00</span></span>
+              </div>
+            </div>
+            <div class="studio-ab-row">
+              <div>
+                <span>A</span>
+                <strong>Baseline</strong>
+                <small>original render</small>
+              </div>
+              <div class="is-selected">
+                <span>B</span>
+                <strong>Current iteration</strong>
+                <small>targeted TTS · 4c</small>
+              </div>
+            </div>
+            <div class="mock-tags" id="studio-tags" aria-label="Studio issue tags"></div>
+          </div>
+          <div class="studio-fix-card">
+            <div class="panel-header">
+              <span>Tag edit</span>
+              <span id="studio-mock-time">1:49.45</span>
+            </div>
+            <div class="studio-fix-body">
+              <div class="tag-edit-heading">
+                <strong id="studio-mock-category">Line delivery</strong>
+                <span>Assisted diagnosis</span>
+              </div>
+              <p id="studio-mock-note"></p>
+              <div class="studio-action-box">
+                <span>Fix plan</span>
+                <strong id="studio-mock-action">Targeted TTS</strong>
+              </div>
+              <div class="mock-costs">
+                <div>
+                  <span>Targeted TTS</span>
+                  <strong id="studio-targeted-cost">4c</strong>
+                </div>
+                <div>
+                  <span>Full rerender</span>
+                  <strong id="studio-full-cost">39c</strong>
+                </div>
+              </div>
+              <button class="button secondary studio-preview-button" id="studio-preview-button" type="button">
+                Preview targeted fix
+              </button>
+              <div class="mock-result" id="studio-mock-result" aria-live="polite"></div>
+            </div>
+          </div>
+        </div>
+        <div class="workflow">
+          <article>
+            <span class="step">01</span>
+            <h3>Tag what sounds off</h3>
+            <p>Mark pacing, line delivery, turn-taking, volume, or phrase-choice issues at the exact timestamp.</p>
+          </article>
+          <article>
+            <span class="step">02</span>
+            <h3>Diagnose the cheapest path</h3>
+            <p>Studio separates free mix edits from targeted TTS and full rerenders before credits are spent.</p>
+          </article>
+          <article>
+            <span class="step">03</span>
+            <h3>Compare A/B and promote</h3>
+            <p>Regenerate one affected turn when possible, listen against the baseline, then promote the version that works.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 Stitch</span>
+      <span>Developer API beta</span>
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

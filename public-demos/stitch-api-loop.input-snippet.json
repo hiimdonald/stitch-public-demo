@@ -1,0 +1,147 @@
+{
+  "speakers": [
+    {
+      "id": "host",
+      "name": "Nina",
+      "voice": {
+        "provider": "elevenlabs",
+        "voice_id": "SAz9YHcvj6GT2YYXdXww",
+        "settings": {
+          "speed": 1,
+          "stability": 0.45,
+          "similarity_boost": 0.75,
+          "style": 0.35,
+          "elevenlabs_model": "eleven_v3"
+        }
+      }
+    },
+    {
+      "id": "builder",
+      "name": "Marcus",
+      "voice": {
+        "provider": "elevenlabs",
+        "voice_id": "CwhRBWXzGAHq8TQ4Fs17",
+        "settings": {
+          "speed": 1,
+          "stability": 0.45,
+          "similarity_boost": 0.75,
+          "style": 0.35,
+          "elevenlabs_model": "eleven_v3"
+        }
+      }
+    }
+  ],
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "host",
+      "text": "Give me the short version, what does Stitch do that a normal text to speech API doesn't?"
+    },
+    {
+      "index": 1,
+      "speaker": "builder",
+      "text": "A TTS API gives you a voice saying a line. Stitch renders the conversation around the line, who has the floor, when someone cuts in, how long the handoff breathes, and where the transcript should land."
+    },
+    {
+      "index": 2,
+      "speaker": "host",
+      "text": "Can I stop you there for a second?",
+      "pause_after": 0.1,
+      "interrupt": true,
+      "interrupt_mode": "soft_bid"
+    },
+    {
+      "index": 3,
+      "speaker": "builder",
+      "text": "Yeah, go ahead."
+    },
+    {
+      "index": 4,
+      "speaker": "host",
+      "text": "That feels like the wedge, providers make voices, Stitch makes conversations."
+    },
+    {
+      "index": 5,
+      "speaker": "builder",
+      "text": "Exactly. If your app needs a coaching call, a sales roleplay, a tutoring session, or a customer interview, the hard part isn't only the voice, it's the timing between people."
+    },
+    {
+      "index": 6,
+      "speaker": "host",
+      "text": "So the input is still structured dialogue?"
+    },
+    {
+      "index": 7,
+      "speaker": "builder",
+      "text": "Right, developers send speakers, turns, cues, and provider choices. Stitch returns mixed audio, transcript timing, a cost estimate, and the render metadata they need to ship it inside their product."
+    },
+    {
+      "index": 8,
+      "speaker": "host",
+      "text": "But if the first render feels a little off, are they back to regenerating the whole thing?"
+    },
+    {
+      "index": 9,
+      "speaker": "builder",
+      "text": "Not if they use Studio. Studio is the review bench. You load the render, listen against the transcript, tag the exact moment that feels slow, awkward, too quiet, or poorly delivered, then decide whether the fix is free mix work or paid targeted TTS."
+    },
+    {
+      "index": 10,
+      "speaker": "host",
+      "text": "So not edit the whole file every time something small feels off.",
+      "interrupt": true,
+      "interrupt_mode": "hard_cut"
+    },
+    {
+      "index": 11,
+      "speaker": "builder",
+      "text": "Right, let me finish that part.",
+      "interrupt": true,
+      "interrupt_mode": "reclaim"
+    },
+    {
+      "index": 12,
+      "speaker": "builder",
+      "text": "If one turn has a weird pause, Studio can regenerate only that stem and stitch it back into the existing mix. If the handoff is too slow, it can adjust the timing without calling the voice provider again. That matters when teams are testing a lot of variants."
+    },
+    {
+      "index": 13,
+      "speaker": "host",
+      "text": "That's useful, especially if the developer is paying for every character."
+    },
+    {
+      "index": 14,
+      "speaker": "builder",
+      "text": "Exactly, and it keeps the quality loop honest, while the API gives you scale and Studio helps you find the recipe worth scaling."
+    },
+    {
+      "index": 15,
+      "speaker": "host",
+      "text": "Where does this start commercially?"
+    },
+    {
+      "index": 16,
+      "speaker": "builder",
+      "text": "Developers building products where conversation is the interface, training apps, simulation tools, support QA, language learning, customer research, anything where the audio needs to sound reviewed, not pasted together."
+    },
+    {
+      "index": 17,
+      "speaker": "host",
+      "text": "Not podcasts first, that distinction matters.",
+      "interrupt": true,
+      "interrupt_mode": "hard_cut"
+    },
+    {
+      "index": 18,
+      "speaker": "builder",
+      "text": "Right, not podcasts first.",
+      "interrupt": true,
+      "interrupt_mode": "reclaim"
+    },
+    {
+      "index": 19,
+      "speaker": "builder",
+      "text": "Podcasts are a possible output, but the business is developer infrastructure for conversation rendering."
+    }
+  ]
+}
