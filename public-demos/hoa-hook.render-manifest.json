@@ -1,0 +1,896 @@
+{
+  "schema_version": 1,
+  "kind": "stitch.render_manifest",
+  "generated_at": "2026-05-06T00:40:19.213Z",
+  "render_id": "hoa-ornaments-funny-demo/latest",
+  "title": "Golden - HOA ornaments funny demo",
+  "source": {
+    "fixture": "hoa-ornaments-funny-demo",
+    "render_dir": "goldens/hoa-ornaments-funny-demo/latest"
+  },
+  "status": {
+    "promoted": true,
+    "promotion": {
+      "schema_version": 1,
+      "promoted_at": "2026-05-03T02:36:26.612Z",
+      "fixture": "hoa-ornaments-funny-demo",
+      "source_dir": "goldens/runs/20260503T015342Z/hoa-ornaments-funny-demo",
+      "reviewer": "local",
+      "notes": ""
+    }
+  },
+  "dialogue": {
+    "speakers": [
+      {
+        "id": "laura",
+        "name": "Laura",
+        "provider": "elevenlabs",
+        "voice_id": "hpp4J3VqNfWAUOO0d1Us",
+        "settings": {
+          "speed": 1,
+          "stability": 0.45,
+          "similarity_boost": 0.75,
+          "style": 0.35,
+          "elevenlabs_model": "eleven_v3"
+        }
+      },
+      {
+        "id": "will",
+        "name": "Will",
+        "provider": "elevenlabs",
+        "voice_id": "nPczCjzI2devNBz1zQrb",
+        "settings": {
+          "speed": 1,
+          "stability": 0.45,
+          "similarity_boost": 0.75,
+          "style": 0.35,
+          "elevenlabs_model": "eleven_v3"
+        }
+      },
+      {
+        "id": "maya",
+        "name": "Maya",
+        "provider": "elevenlabs",
+        "voice_id": "cgSgspJ2msm6clMCkdW9",
+        "settings": {
+          "speed": 1,
+          "stability": 0.45,
+          "similarity_boost": 0.75,
+          "style": 0.35,
+          "elevenlabs_model": "eleven_v3"
+        }
+      }
+    ],
+    "turn_count": 36,
+    "input": {
+      "title": "Golden - HOA ornaments funny demo",
+      "speakers": [
+        {
+          "id": "laura",
+          "name": "Laura",
+          "voice": {
+            "provider": "elevenlabs",
+            "voice_id": "hpp4J3VqNfWAUOO0d1Us",
+            "settings": {
+              "speed": 1,
+              "stability": 0.45,
+              "similarity_boost": 0.75,
+              "style": 0.35,
+              "elevenlabs_model": "eleven_v3"
+            }
+          }
+        },
+        {
+          "id": "will",
+          "name": "Will",
+          "voice": {
+            "provider": "elevenlabs",
+            "voice_id": "nPczCjzI2devNBz1zQrb",
+            "settings": {
+              "speed": 1,
+              "stability": 0.45,
+              "similarity_boost": 0.75,
+              "style": 0.35,
+              "elevenlabs_model": "eleven_v3"
+            }
+          }
+        },
+        {
+          "id": "maya",
+          "name": "Maya",
+          "voice": {
+            "provider": "elevenlabs",
+            "voice_id": "cgSgspJ2msm6clMCkdW9",
+            "settings": {
+              "speed": 1,
+              "stability": 0.45,
+              "similarity_boost": 0.75,
+              "style": 0.35,
+              "elevenlabs_model": "eleven_v3"
+            }
+          }
+        }
+      ],
+      "pacing": {
+        "preset": "casual",
+        "base_pause_ms": 220,
+        "same_speaker_multiplier": 0.55,
+        "new_speaker_multiplier": 0.72,
+        "min_pause_ms": 70,
+        "max_pause_ms": 420
+      },
+      "turns": [
+        {
+          "speaker": "laura",
+          "text": "Alright, next up is the neighborhood HOA ornament complaint. I'm Laura, chairing tonight, Will filed it, and Maya owns several of the flamingos in question."
+        },
+        {
+          "speaker": "will",
+          "text": "My complaint is simple, the front yards are becoming a themed miniature golf course."
+        },
+        {
+          "speaker": "maya",
+          "text": "That is extremely generous, thank you."
+        },
+        {
+          "speaker": "will",
+          "text": "I prepared a brief, with exhibits."
+        },
+        {
+          "speaker": "maya",
+          "text": "He brought exhibits, for gnomes."
+        },
+        {
+          "speaker": "will",
+          "text": "Forty-two pages, mostly photos."
+        },
+        {
+          "speaker": "laura",
+          "text": "We're not reading forty-two pages."
+        },
+        {
+          "speaker": "will",
+          "text": "On Maple Court alone, I counted nineteen flamingos."
+        },
+        {
+          "speaker": "maya",
+          "text": "Nine of those are mine, and they have names."
+        },
+        {
+          "speaker": "will",
+          "text": "That's the problem, Maya, they have names."
+        },
+        {
+          "speaker": "maya",
+          "text": "Phyllis is a delight."
+        },
+        {
+          "speaker": "will",
+          "text": "Phyllis is a code violation."
+        },
+        {
+          "speaker": "laura",
+          "text": "Sorry, can I just-",
+          "pause_after": 0.1,
+          "interrupt": true,
+          "interrupt_mode": "soft_bid"
+        },
+        {
+          "speaker": "will",
+          "text": "Sure, go ahead."
+        },
+        {
+          "speaker": "laura",
+          "text": "The bylaws say tasteful, that's the whole sentence."
+        },
+        {
+          "speaker": "maya",
+          "text": "Right."
+        },
+        {
+          "speaker": "will",
+          "text": "And tasteful clearly excludes a plastic bird in a top hat."
+        },
+        {
+          "speaker": "maya",
+          "text": "Phyllis wears a sunhat, it's seasonal."
+        },
+        {
+          "speaker": "will",
+          "text": "She wore a Santa hat in July."
+        },
+        {
+          "speaker": "maya",
+          "text": "Christmas in July is a thing, Will."
+        },
+        {
+          "speaker": "will",
+          "text": "It is not a thing recognized by the bylaws, and frankly, this sets a dangerous-"
+        },
+        {
+          "speaker": "laura",
+          "text": "Will, it's a flamingo in a hat.",
+          "interrupt": true,
+          "interrupt_mode": "hard_cut"
+        },
+        {
+          "speaker": "will",
+          "text": "To clarify, I just mean once we allow one hat, we've opened the door to costumes."
+        },
+        {
+          "speaker": "laura",
+          "text": "Still no."
+        },
+        {
+          "speaker": "maya",
+          "text": "Can I say something, because actually-"
+        },
+        {
+          "speaker": "will",
+          "text": "If I could just-",
+          "interrupt": true,
+          "interrupt_mode": "failed_bid"
+        },
+        {
+          "speaker": "laura",
+          "text": "Maya has the floor, Will."
+        },
+        {
+          "speaker": "maya",
+          "text": "Thank you, last summer, three kids knocked on my door just to meet Phyllis."
+        },
+        {
+          "speaker": "will",
+          "text": "Maya, that's technically trespassing."
+        },
+        {
+          "speaker": "maya",
+          "text": "That's community.",
+          "interrupt": true,
+          "interrupt_mode": "reclaim"
+        },
+        {
+          "speaker": "will",
+          "text": "And we still haven't addressed the pirate ship."
+        },
+        {
+          "speaker": "laura",
+          "text": "The pirate ship is tabled until I have emotional support."
+        },
+        {
+          "speaker": "laura",
+          "text": "Can we vote please, before I age another year."
+        },
+        {
+          "speaker": "will",
+          "text": "I move to ban all decorative wildlife and humanoid figures under three feet."
+        },
+        {
+          "speaker": "maya",
+          "text": "I move to make Phyllis the official mascot."
+        },
+        {
+          "speaker": "laura",
+          "text": "I move that we adjourn and I go scream into a pillow."
+        }
+      ],
+      "output": {
+        "format": "mp3",
+        "sample_rate": 44100,
+        "include_transcript": true
+      },
+      "audio_polish": {
+        "intro_silence_ms": 180,
+        "outro_silence_ms": 260,
+        "fade_in_ms": 80,
+        "fade_out_ms": 160
+      }
+    }
+  },
+  "costs": {
+    "estimated_cents": 48,
+    "estimated_duration_seconds": 112.14,
+    "total_characters": 1575,
+    "total_tts_calls": 36
+  },
+  "artifacts": {
+    "audio": "goldens/hoa-ornaments-funny-demo/latest/output.mp3",
+    "transcript_json": "goldens/hoa-ornaments-funny-demo/latest/output.json",
+    "transcript_srt": "goldens/hoa-ornaments-funny-demo/latest/output.srt",
+    "transcript_vtt": "goldens/hoa-ornaments-funny-demo/latest/output.vtt",
+    "mix_plan": "goldens/hoa-ornaments-funny-demo/latest/output.mix.json",
+    "dry_run": "goldens/hoa-ornaments-funny-demo/latest/dry-run.json",
+    "timing_manifest": "goldens/hoa-ornaments-funny-demo/latest/manifest.json"
+  },
+  "stems": {
+    "turns": [
+      {
+        "turn_index": 0,
+        "speaker_id": "laura",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-0.mp3",
+        "start_ms": 0,
+        "duration_ms": 10187.755,
+        "gain_db": 0,
+        "text": "Alright, next up is the neighborhood HOA ornament complaint. I'm Laura, chairing tonight, Will filed it, and Maya owns several of the flamingos in question."
+      },
+      {
+        "turn_index": 1,
+        "speaker_id": "will",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-1.mp3",
+        "start_ms": 10346,
+        "duration_ms": 5590.204,
+        "gain_db": 0,
+        "text": "My complaint is simple, the front yards are becoming a themed miniature golf course."
+      },
+      {
+        "turn_index": 2,
+        "speaker_id": "maya",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-2.mp3",
+        "start_ms": 16094,
+        "duration_ms": 2351.02,
+        "gain_db": 0,
+        "text": "That is extremely generous, thank you."
+      },
+      {
+        "turn_index": 3,
+        "speaker_id": "will",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-3.mp3",
+        "start_ms": 18603,
+        "duration_ms": 2298.7760000000003,
+        "gain_db": 0,
+        "text": "I prepared a brief, with exhibits."
+      },
+      {
+        "turn_index": 4,
+        "speaker_id": "maya",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-4.mp3",
+        "start_ms": 21060,
+        "duration_ms": 2429.388,
+        "gain_db": 0,
+        "text": "He brought exhibits, for gnomes."
+      },
+      {
+        "turn_index": 5,
+        "speaker_id": "will",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-5.mp3",
+        "start_ms": 23647,
+        "duration_ms": 2351.02,
+        "gain_db": 0,
+        "text": "Forty-two pages, mostly photos."
+      },
+      {
+        "turn_index": 6,
+        "speaker_id": "laura",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-6.mp3",
+        "start_ms": 26156,
+        "duration_ms": 2037.5510000000002,
+        "gain_db": 0,
+        "text": "We're not reading forty-two pages."
+      },
+      {
+        "turn_index": 7,
+        "speaker_id": "will",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-7.mp3",
+        "start_ms": 28352,
+        "duration_ms": 3343.673,
+        "gain_db": 0,
+        "text": "On Maple Court alone, I counted nineteen flamingos."
+      },
+      {
+        "turn_index": 8,
+        "speaker_id": "maya",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-8.mp3",
+        "start_ms": 31854,
+        "duration_ms": 3317.551,
+        "gain_db": 0,
+        "text": "Nine of those are mine, and they have names."
+      },
+      {
+        "turn_index": 9,
+        "speaker_id": "will",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-9.mp3",
+        "start_ms": 35330,
+        "duration_ms": 2586.122,
+        "gain_db": 0,
+        "text": "That's the problem, Maya, they have names."
+      },
+      {
+        "turn_index": 10,
+        "speaker_id": "maya",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-10.mp3",
+        "start_ms": 38074,
+        "duration_ms": 2037.5510000000002,
+        "gain_db": 0,
+        "text": "Phyllis is a delight."
+      },
+      {
+        "turn_index": 11,
+        "speaker_id": "will",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-11.mp3",
+        "start_ms": 40270,
+        "duration_ms": 1854.694,
+        "gain_db": 0,
+        "text": "Phyllis is a code violation."
+      },
+      {
+        "turn_index": 12,
+        "speaker_id": "laura",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-12.mp3",
+        "start_ms": 40965,
+        "duration_ms": 1097.143,
+        "gain_db": 2,
+        "text": "Sorry, can I just-"
+      },
+      {
+        "turn_index": 13,
+        "speaker_id": "will",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-13.mp3",
+        "start_ms": 42162,
+        "duration_ms": 1227.7549999999999,
+        "gain_db": 0,
+        "text": "Sure, go ahead."
+      },
+      {
+        "turn_index": 14,
+        "speaker_id": "laura",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-14.mp3",
+        "start_ms": 43548,
+        "duration_ms": 3186.9390000000003,
+        "gain_db": 0,
+        "text": "The bylaws say tasteful, that's the whole sentence."
+      },
+      {
+        "turn_index": 15,
+        "speaker_id": "maya",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-15.mp3",
+        "start_ms": 46893,
+        "duration_ms": 574.6940000000001,
+        "gain_db": 0,
+        "text": "Right."
+      },
+      {
+        "turn_index": 16,
+        "speaker_id": "will",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-16.mp3",
+        "start_ms": 47626,
+        "duration_ms": 4075.1020000000003,
+        "gain_db": 0,
+        "text": "And tasteful clearly excludes a plastic bird in a top hat."
+      },
+      {
+        "turn_index": 17,
+        "speaker_id": "maya",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-17.mp3",
+        "start_ms": 51859,
+        "duration_ms": 2298.7760000000003,
+        "gain_db": 0,
+        "text": "Phyllis wears a sunhat, it's seasonal."
+      },
+      {
+        "turn_index": 18,
+        "speaker_id": "will",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-18.mp3",
+        "start_ms": 54316,
+        "duration_ms": 2115.918,
+        "gain_db": 0,
+        "text": "She wore a Santa hat in July."
+      },
+      {
+        "turn_index": 19,
+        "speaker_id": "maya",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-19.mp3",
+        "start_ms": 56590,
+        "duration_ms": 2115.918,
+        "gain_db": 0,
+        "text": "Christmas in July is a thing, Will."
+      },
+      {
+        "turn_index": 20,
+        "speaker_id": "will",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-20.mp3",
+        "start_ms": 58864,
+        "duration_ms": 5198.367,
+        "gain_db": 0,
+        "text": "It is not a thing recognized by the bylaws, and frankly, this sets a dangerous-"
+      },
+      {
+        "turn_index": 21,
+        "speaker_id": "laura",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-21.mp3",
+        "start_ms": 62342,
+        "duration_ms": 1854.694,
+        "gain_db": 5,
+        "text": "Will, it's a flamingo in a hat."
+      },
+      {
+        "turn_index": 22,
+        "speaker_id": "will",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-22.mp3",
+        "start_ms": 64237,
+        "duration_ms": 5511.8369999999995,
+        "gain_db": 0,
+        "text": "To clarify, I just mean once we allow one hat, we've opened the door to costumes."
+      },
+      {
+        "turn_index": 23,
+        "speaker_id": "laura",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-23.mp3",
+        "start_ms": 69907,
+        "duration_ms": 809.7959999999999,
+        "gain_db": 0,
+        "text": "Still no."
+      },
+      {
+        "turn_index": 24,
+        "speaker_id": "maya",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-24.mp3",
+        "start_ms": 70875,
+        "duration_ms": 2220.408,
+        "gain_db": 0,
+        "text": "Can I say something, because actually-"
+      },
+      {
+        "turn_index": 25,
+        "speaker_id": "will",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-25.mp3",
+        "start_ms": 71395,
+        "duration_ms": 1201.633,
+        "gain_db": -5,
+        "text": "If I could just-"
+      },
+      {
+        "turn_index": 26,
+        "speaker_id": "laura",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-26.mp3",
+        "start_ms": 72677,
+        "duration_ms": 1410.612,
+        "gain_db": 0,
+        "text": "Maya has the floor, Will."
+      },
+      {
+        "turn_index": 27,
+        "speaker_id": "maya",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-27.mp3",
+        "start_ms": 74246,
+        "duration_ms": 6661.224,
+        "gain_db": 0,
+        "text": "Thank you, last summer, three kids knocked on my door just to meet Phyllis."
+      },
+      {
+        "turn_index": 28,
+        "speaker_id": "will",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-28.mp3",
+        "start_ms": 81065,
+        "duration_ms": 2324.898,
+        "gain_db": 0,
+        "text": "Maya, that's technically trespassing."
+      },
+      {
+        "turn_index": 29,
+        "speaker_id": "maya",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-29.mp3",
+        "start_ms": 82560,
+        "duration_ms": 1123.2649999999999,
+        "gain_db": 4,
+        "text": "That's community."
+      },
+      {
+        "turn_index": 30,
+        "speaker_id": "will",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-30.mp3",
+        "start_ms": 83843,
+        "duration_ms": 2246.531,
+        "gain_db": 0,
+        "text": "And we still haven't addressed the pirate ship."
+      },
+      {
+        "turn_index": 31,
+        "speaker_id": "laura",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-31.mp3",
+        "start_ms": 86248,
+        "duration_ms": 2951.837,
+        "gain_db": 0,
+        "text": "The pirate ship is tabled until I have emotional support."
+      },
+      {
+        "turn_index": 32,
+        "speaker_id": "laura",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-32.mp3",
+        "start_ms": 89321,
+        "duration_ms": 2768.98,
+        "gain_db": 0,
+        "text": "Can we vote please, before I age another year."
+      },
+      {
+        "turn_index": 33,
+        "speaker_id": "will",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-33.mp3",
+        "start_ms": 92248,
+        "duration_ms": 4884.898,
+        "gain_db": 0,
+        "text": "I move to ban all decorative wildlife and humanoid figures under three feet."
+      },
+      {
+        "turn_index": 34,
+        "speaker_id": "maya",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-34.mp3",
+        "start_ms": 97291,
+        "duration_ms": 2664.49,
+        "gain_db": 0,
+        "text": "I move to make Phyllis the official mascot."
+      },
+      {
+        "turn_index": 35,
+        "speaker_id": "laura",
+        "stem": "goldens/hoa-ornaments-funny-demo/latest/output.stems/turn-35.mp3",
+        "start_ms": 100113,
+        "duration_ms": 3082.449,
+        "gain_db": 0,
+        "text": "I move that we adjourn and I go scream into a pillow."
+      }
+    ]
+  },
+  "timeline": {
+    "turns": [
+      {
+        "index": 0,
+        "speaker_id": "laura",
+        "start_seconds": 0.18,
+        "end_seconds": 10.368
+      },
+      {
+        "index": 1,
+        "speaker_id": "will",
+        "start_seconds": 10.526,
+        "end_seconds": 16.116
+      },
+      {
+        "index": 2,
+        "speaker_id": "maya",
+        "start_seconds": 16.274,
+        "end_seconds": 18.625
+      },
+      {
+        "index": 3,
+        "speaker_id": "will",
+        "start_seconds": 18.783,
+        "end_seconds": 21.082
+      },
+      {
+        "index": 4,
+        "speaker_id": "maya",
+        "start_seconds": 21.24,
+        "end_seconds": 23.669
+      },
+      {
+        "index": 5,
+        "speaker_id": "will",
+        "start_seconds": 23.827,
+        "end_seconds": 26.178
+      },
+      {
+        "index": 6,
+        "speaker_id": "laura",
+        "start_seconds": 26.336,
+        "end_seconds": 28.374
+      },
+      {
+        "index": 7,
+        "speaker_id": "will",
+        "start_seconds": 28.532,
+        "end_seconds": 31.876
+      },
+      {
+        "index": 8,
+        "speaker_id": "maya",
+        "start_seconds": 32.034,
+        "end_seconds": 35.352
+      },
+      {
+        "index": 9,
+        "speaker_id": "will",
+        "start_seconds": 35.51,
+        "end_seconds": 38.096
+      },
+      {
+        "index": 10,
+        "speaker_id": "maya",
+        "start_seconds": 38.254,
+        "end_seconds": 40.292
+      },
+      {
+        "index": 11,
+        "speaker_id": "will",
+        "start_seconds": 40.45,
+        "end_seconds": 41.405,
+        "is_interrupted": true
+      },
+      {
+        "index": 12,
+        "speaker_id": "laura",
+        "start_seconds": 41.145,
+        "end_seconds": 42.242,
+        "overlaps_with": 11
+      },
+      {
+        "index": 13,
+        "speaker_id": "will",
+        "start_seconds": 42.342,
+        "end_seconds": 43.57
+      },
+      {
+        "index": 14,
+        "speaker_id": "laura",
+        "start_seconds": 43.728,
+        "end_seconds": 46.915
+      },
+      {
+        "index": 15,
+        "speaker_id": "maya",
+        "start_seconds": 47.073,
+        "end_seconds": 47.648
+      },
+      {
+        "index": 16,
+        "speaker_id": "will",
+        "start_seconds": 47.806,
+        "end_seconds": 51.881
+      },
+      {
+        "index": 17,
+        "speaker_id": "maya",
+        "start_seconds": 52.039,
+        "end_seconds": 54.338
+      },
+      {
+        "index": 18,
+        "speaker_id": "will",
+        "start_seconds": 54.496,
+        "end_seconds": 56.612
+      },
+      {
+        "index": 19,
+        "speaker_id": "maya",
+        "start_seconds": 56.77,
+        "end_seconds": 58.886
+      },
+      {
+        "index": 20,
+        "speaker_id": "will",
+        "start_seconds": 59.044,
+        "end_seconds": 62.942,
+        "is_interrupted": true
+      },
+      {
+        "index": 21,
+        "speaker_id": "laura",
+        "start_seconds": 62.522,
+        "end_seconds": 64.377,
+        "overlaps_with": 20
+      },
+      {
+        "index": 22,
+        "speaker_id": "will",
+        "start_seconds": 64.417,
+        "end_seconds": 69.929
+      },
+      {
+        "index": 23,
+        "speaker_id": "laura",
+        "start_seconds": 70.087,
+        "end_seconds": 70.897
+      },
+      {
+        "index": 24,
+        "speaker_id": "maya",
+        "start_seconds": 71.055,
+        "end_seconds": 73.275
+      },
+      {
+        "index": 25,
+        "speaker_id": "will",
+        "start_seconds": 71.575,
+        "end_seconds": 72.777,
+        "overlaps_with": 24
+      },
+      {
+        "index": 26,
+        "speaker_id": "laura",
+        "start_seconds": 72.857,
+        "end_seconds": 74.268
+      },
+      {
+        "index": 27,
+        "speaker_id": "maya",
+        "start_seconds": 74.426,
+        "end_seconds": 81.087
+      },
+      {
+        "index": 28,
+        "speaker_id": "will",
+        "start_seconds": 81.245,
+        "end_seconds": 82.92,
+        "is_interrupted": true
+      },
+      {
+        "index": 29,
+        "speaker_id": "maya",
+        "start_seconds": 82.74,
+        "end_seconds": 83.863,
+        "overlaps_with": 28
+      },
+      {
+        "index": 30,
+        "speaker_id": "will",
+        "start_seconds": 84.023,
+        "end_seconds": 86.27
+      },
+      {
+        "index": 31,
+        "speaker_id": "laura",
+        "start_seconds": 86.428,
+        "end_seconds": 89.38
+      },
+      {
+        "index": 32,
+        "speaker_id": "laura",
+        "start_seconds": 89.501,
+        "end_seconds": 92.27
+      },
+      {
+        "index": 33,
+        "speaker_id": "will",
+        "start_seconds": 92.428,
+        "end_seconds": 97.313
+      },
+      {
+        "index": 34,
+        "speaker_id": "maya",
+        "start_seconds": 97.471,
+        "end_seconds": 100.135
+      },
+      {
+        "index": 35,
+        "speaker_id": "laura",
+        "start_seconds": 100.293,
+        "end_seconds": 103.375
+      }
+    ],
+    "backchannels": [],
+    "reactions": []
+  },
+  "review": {
+    "tags": []
+  },
+  "diagnostics": {
+    "schema_version": 1,
+    "kind": "stitch.script_diagnostics",
+    "summary": {
+      "total": 1,
+      "warnings": 1,
+      "by_category": {
+        "line-delivery": 1
+      }
+    },
+    "items": [
+      {
+        "code": "period_heavy_turn",
+        "severity": "warning",
+        "category": "line-delivery",
+        "fix_path": "script_rewrite",
+        "likely_origin": "script",
+        "turn_index": 0,
+        "speaker_id": "laura",
+        "message": "This turn has multiple hard sentence breaks. TTS may turn them into long internal pauses; use commas or split the turn when appropriate.",
+        "evidence": {
+          "sentence_breaks": 2,
+          "characters": 156
+        }
+      }
+    ]
+  },
+  "iterations": {
+    "active": "A",
+    "saved": []
+  }
+}

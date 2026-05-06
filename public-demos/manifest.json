@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T00:13:36.323Z",
+  "generated_at": "2026-05-06T00:40:19.212Z",
   "output_dir": "public-demos",
   "clips": [
     {
@@ -17,6 +17,7 @@
       "output_audio": "public-demos/hoa-hook.mp3",
       "transcript_json": "public-demos/hoa-hook.transcript.json",
       "input_snippet_json": "public-demos/hoa-hook.input-snippet.json",
+      "render_manifest_json": "artifacts/public-demos/hoa-hook.render-manifest.json",
       "start_seconds": 0,
       "duration_seconds": 103.635,
       "source_duration_seconds": 103.635
@@ -36,6 +37,7 @@
       "output_audio": "public-demos/stitch-api-loop.mp3",
       "transcript_json": "public-demos/stitch-api-loop.transcript.json",
       "input_snippet_json": "public-demos/stitch-api-loop.input-snippet.json",
+      "render_manifest_json": "artifacts/public-demos/stitch-api-loop.render-manifest.json",
       "start_seconds": 0,
       "duration_seconds": 142.086,
       "source_duration_seconds": 142.086
