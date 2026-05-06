@@ -218,6 +218,8 @@ h3 {
 .proof-player-panel,
 .transcript-panel,
 .code-shell,
+.prompt-shell,
+.workflow-step-card,
 .workflow article {
   border: 2px solid var(--ink);
   background: var(--paper);
@@ -379,6 +381,7 @@ audio {
 }
 
 .proof-grid,
+.input-workflow-section,
 .api-section,
 .studio-section {
   display: grid;
@@ -507,8 +510,64 @@ audio {
 }
 
 .api-section,
+.input-workflow-section,
 .studio-section {
   grid-template-columns: 1fr;
+}
+
+.input-workflow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(420px, 0.68fr);
+  gap: 16px;
+  align-items: stretch;
+}
+
+.workflow-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.workflow-step-card {
+  position: relative;
+  min-height: 250px;
+  padding: 18px;
+}
+
+.workflow-step-card span {
+  display: inline-flex;
+  margin-bottom: 42px;
+  border: 1px solid var(--line);
+  background: var(--blue-soft);
+  padding: 5px 8px;
+  color: var(--blue);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.workflow-step-card h3 {
+  max-width: 260px;
+  font-size: 22px;
+  line-height: 1.05;
+}
+
+.workflow-step-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.48;
+}
+
+.prompt-shell {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+  background: #171717;
+}
+
+.prompt-shell pre {
+  max-height: none;
 }
 
 .api-preview {
@@ -1044,8 +1103,14 @@ code {
 
   .endpoint-stack,
   .api-code-grid,
+  .input-workflow,
+  .workflow-steps,
   .studio-mock {
     grid-template-columns: 1fr;
+  }
+
+  .workflow-step-card {
+    min-height: 0;
   }
 }
 

@@ -18,6 +18,7 @@
       </a>
       <nav class="nav-links" aria-label="Page sections">
         <a href="#listen">Listen</a>
+        <a href="#workflow">Workflow</a>
         <a href="#api">API</a>
         <a href="#studio">Studio</a>
       </nav>
@@ -79,6 +80,61 @@
             <span id="transcript-count">0 turns</span>
           </div>
           <div class="transcript-list" id="transcript-list"></div>
+        </div>
+      </section>
+
+      <section class="input-workflow-section" id="workflow" aria-labelledby="workflow-title">
+        <div class="section-heading">
+          <p class="eyebrow">From idea to render</p>
+          <h2 id="workflow-title">Use an LLM, your app data, or your own script.</h2>
+          <p>
+            Stitch does not need to be the writing tool. It gives developers a
+            repeatable handoff: turn a scene idea into structured dialogue,
+            validate the shape, then render the conversation.
+          </p>
+        </div>
+        <div class="input-workflow">
+          <div class="workflow-steps" aria-label="Stitch input workflow">
+            <article class="workflow-step-card">
+              <span>01</span>
+              <h3>Generate or write the scene</h3>
+              <p>
+                Start from product data, a human script, or an LLM prompt that
+                asks for speakers, turns, and natural interruption moments.
+              </p>
+            </article>
+            <article class="workflow-step-card">
+              <span>02</span>
+              <h3>Shape it as Stitch JSON</h3>
+              <p>
+                Define speakers, voice choices, turn text, floor-control cues,
+                backchannels, and any output options your app needs.
+              </p>
+            </article>
+            <article class="workflow-step-card">
+              <span>03</span>
+              <h3>Dry run, render, refine</h3>
+              <p>
+                Estimate cost, check the plan, render audio and transcripts,
+                then use targeted refinement when one turn needs work.
+              </p>
+            </article>
+          </div>
+          <div class="prompt-shell" aria-label="Example prompt for generating Stitch JSON">
+            <div class="panel-header">
+              <span>LLM prompt starter</span>
+              <span>structured output</span>
+            </div>
+            <pre><code>Write a short 3-speaker conversation for Stitch.
+Return valid JSON with:
+- speakers with ids, names, roles, and voice direction
+- turns with speaker ids and natural spoken text
+- notes for one soft interruption, one hard cut,
+  one backchannel, and one reclaim
+
+Keep it conversational. Avoid long monologues.
+Use contractions and natural sentence breaks.</code></pre>
+          </div>
         </div>
       </section>
 
