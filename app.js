@@ -36,6 +36,8 @@ const els = {
   studioFullCost: document.querySelector("#studio-full-cost"),
   studioPreviewButton: document.querySelector("#studio-preview-button"),
   studioResult: document.querySelector("#studio-mock-result"),
+  copyFullPrompt: document.querySelector("#copy-full-prompt"),
+  fullPromptText: document.querySelector("#full-prompt-text"),
 };
 
 if ("scrollRestoration" in history) {
@@ -75,6 +77,10 @@ els.studioPreviewButton.addEventListener("click", () => {
   renderStudioMock();
 });
 
+els.copyFullPrompt?.addEventListener("click", () => {
+  copyFullPrompt();
+});
+
 init().catch((error) => {
   const panel = document.querySelector(".proof-player-panel");
   panel.innerHTML = `<div class="load-error">Could not load demo assets. Run <code>npm run demo:export</code>, then restart <code>npm run demo:page</code>.</div>`;
@@ -91,6 +97,42 @@ async function init() {
 
 function resetPreviewScroll() {
   window.scrollTo({ top: 0, left: 0 });
+}
+
+async function copyFullPrompt() {
+  const text = els.fullPromptText?.textContent?.trim();
+  if (!text || !els.copyFullPrompt) return;
+
+  try {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(text);
+    } else {
+      copyTextFallback(text);
+    }
+    setCopyPromptLabel("Copied");
+  } catch {
+    copyTextFallback(text);
+    setCopyPromptLabel("Copied");
+  }
+}
+
+function copyTextFallback(text) {
+  const textarea = document.createElement("textarea");
+  textarea.value = text;
+  textarea.setAttribute("readonly", "");
+  textarea.style.position = "fixed";
+  textarea.style.top = "-9999px";
+  document.body.append(textarea);
+  textarea.select();
+  document.execCommand("copy");
+  textarea.remove();
+}
+
+function setCopyPromptLabel(label) {
+  els.copyFullPrompt.textContent = label;
+  window.setTimeout(() => {
+    if (els.copyFullPrompt) els.copyFullPrompt.textContent = "Copy prompt";
+  }, 1800);
 }
 
 function schedulePreviewScrollReset() {

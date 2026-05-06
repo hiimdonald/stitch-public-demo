@@ -134,6 +134,66 @@ Return valid JSON with:
 
 Keep it conversational. Avoid long monologues.
 Use contractions and natural sentence breaks.</code></pre>
+            <details class="full-prompt">
+              <summary>Open full prompt</summary>
+              <div class="full-prompt-body">
+                <div class="panel-header">
+                  <span>Copy-ready prompt</span>
+                  <button class="prompt-copy-button" id="copy-full-prompt" type="button">
+                    Copy prompt
+                  </button>
+                </div>
+                <pre><code id="full-prompt-text">You are writing structured input for Stitch, a developer API that renders natural multi-speaker conversations from structured dialogue.
+
+Create a short conversation that can be rendered as audio.
+
+Return valid JSON only. Do not include markdown.
+
+Use this shape:
+{
+  "title": "Short descriptive title",
+  "speakers": [
+    {
+      "id": "lowercase_id",
+      "name": "Display Name",
+      "role": "short role",
+      "voice_direction": "concise voice/personality direction"
+    }
+  ],
+  "turns": [
+    {
+      "speaker": "speaker_id",
+      "text": "Natural spoken dialogue."
+    }
+  ],
+  "notes": {
+    "soft_interruption_turn_index": 0,
+    "permission_grant_turn_index": 0,
+    "hard_cut_turn_index": 0,
+    "failed_bid_turn_index": 0,
+    "reclaim_turn_index": 0,
+    "backchannel_candidate_turn_index": 0
+  }
+}
+
+Requirements:
+- Use 2 or 3 speakers.
+- Keep the clip around 45-90 seconds when spoken.
+- Make the dialogue sound like real people, not essay paragraphs.
+- Use contractions and spoken phrasing.
+- Avoid long monologues. Most turns should be one sentence.
+- Include one soft interruption, where someone politely asks to enter.
+- Include one hard cut, where someone clearly interrupts and wins the floor.
+- Include one reclaim, where a speaker takes control back naturally.
+- Include one short backchannel candidate like "right", "mm-hmm", or "yeah".
+- If there is a permission moment, include a short response like "go ahead" or "sure".
+- Avoid explaining the interruption labels in the spoken text.
+- Avoid stage directions unless they are needed in the JSON notes.
+- Keep punctuation natural. Do not overuse periods inside one spoken turn if a comma would sound more conversational.
+
+The final output must be valid JSON only.</code></pre>
+              </div>
+            </details>
           </div>
         </div>
       </section>

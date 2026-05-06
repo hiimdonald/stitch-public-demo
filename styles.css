@@ -561,13 +561,83 @@ audio {
 
 .prompt-shell {
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto auto auto;
   overflow: hidden;
   background: #171717;
 }
 
 .prompt-shell pre {
   max-height: none;
+}
+
+.full-prompt {
+  border-top: 1px solid rgba(247, 247, 242, 0.18);
+  background: #171717;
+}
+
+.full-prompt summary {
+  display: flex;
+  min-height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  border-top: 1px solid rgba(247, 247, 242, 0.08);
+  color: #f5f2e9;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.full-prompt summary::-webkit-details-marker {
+  display: none;
+}
+
+.full-prompt summary::after {
+  border: 1px solid rgba(247, 247, 242, 0.45);
+  padding: 3px 7px;
+  color: #f5f2e9;
+  content: "+";
+}
+
+.full-prompt[open] summary::after {
+  content: "-";
+}
+
+.full-prompt-body {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  border-top: 1px solid rgba(247, 247, 242, 0.18);
+}
+
+.full-prompt-body .panel-header {
+  border-color: rgba(247, 247, 242, 0.18);
+}
+
+.prompt-copy-button {
+  border: 1px solid rgba(247, 247, 242, 0.45);
+  background: #f5f2e9;
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0;
+  padding: 5px 8px;
+  text-transform: none;
+}
+
+.prompt-copy-button:hover,
+.prompt-copy-button:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.full-prompt pre {
+  max-height: 480px;
+  border-top: 1px solid rgba(247, 247, 242, 0.08);
 }
 
 .api-preview {
